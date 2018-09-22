@@ -23,13 +23,15 @@ var rootCmd = &cobra.Command{
 			os.Exit(1)
 		}
 
-		output, err := json.Marshal(annotations)
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
+		if len(annotations) > 0 {
+			output, err := json.Marshal(annotations)
+			if err != nil {
+				fmt.Println(err)
+				os.Exit(1)
+			}
 
-		fmt.Println(string(output))
+			fmt.Println(string(output))
+		}
 	},
 }
 
