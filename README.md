@@ -11,13 +11,13 @@ $ golint ./... | annotation | jsonpp
   {
     "path": "parser/parser.go",
     "start_line": 68,
-    "end_line": 0,
+    "end_line": null,
     "start_column": 35,
-    "end_column": 0,
-    "annoation_level": "",
+    "end_column": null,
+    "annoation_level": null,
     "message": "error strings should not be capitalized or end with punctuation or a newline",
-    "title": "",
-    "raw_details": ""
+    "title": null,
+    "raw_details": null
   }
-]                        
+]
 ```

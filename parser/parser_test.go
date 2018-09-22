@@ -12,8 +12,8 @@ func TestParseLineSuccess(t *testing.T) {
 		t.Error(err)
 	}
 
-	if annotation.Path != "commands/check.go" {
-		t.Errorf("Path: got %q, want %q", annotation.Path, "commands/check.go")
+	if *annotation.Path != "commands/check.go" {
+		t.Errorf("Path: got %q, want %q", *annotation.Path, "commands/check.go")
 	}
 
 	if *annotation.StartLine != 10 {

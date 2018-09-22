@@ -29,7 +29,7 @@ var rootCmd = &cobra.Command{
 			os.Exit(1)
 		}
 
-		fmt.Fprintf(os.Stdout, "%s", output)
+		fmt.Println(string(output))
 	},
 }
 
